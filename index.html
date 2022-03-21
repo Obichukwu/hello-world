@@ -7,6 +7,23 @@
     <title>Hello World</title>
 </head>
 <body>
-    
+    <h1>First Task</h1>
+    <div>
+        <label>What is your name?</label>
+        <input id="nameIdField" name="nameNameField"/>
+
+        <button onclick="sayName()">Greet</button>
+        <p id="responseField"></p>
+    </div>
+
+    <script type="text/javascript">
+
+        function sayName(){
+            let nme = document.getElementById("nameIdField")
+            let resp = document.getElementById("responseField")
+
+            resp.innerText = "Hello " + nme.value
+        }
+    </script>
 </body>
 </html>

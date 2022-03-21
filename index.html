@@ -1,24 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hello World</title>
 </head>
+
 <body>
-    <h1>First Task</h1>
-    <div>
-        <label>What is your name?</label>
-        <input id="nameIdField" name="nameNameField"/>
+    <aside>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bulb.html">Bulb</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h1>First Task</h1>
+        <div>
+            <label>What is your name?</label>
+            <input id="nameIdField" name="nameNameField" />
 
-        <button onclick="sayName()">Greet</button>
-        <p id="responseField"></p>
-    </div>
-
+            <button onclick="sayName()">Greet</button>
+            <p id="responseField"></p>
+        </div>
+    </main>
     <script type="text/javascript">
 
-        function sayName(){
+        function sayName() {
             let nme = document.getElementById("nameIdField")
             let resp = document.getElementById("responseField")
 
@@ -26,4 +35,5 @@
         }
     </script>
 </body>
+
 </html>

@@ -9,21 +9,28 @@
 </head>
 
 <body>
+    <aside>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bulb.html">Bulb</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h2>What Can JavaScript Do?</h2>
 
-    <h2>What Can JavaScript Do?</h2>
-
-    <p>JavaScript can change HTML attribute values.</p>
-
-    <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
-
-    <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif';status='on'">Turn on the light</button>
-
-    <img id="myImage" src="img/pic_bulboff.gif" style="width:100px" alt="Bulb">
-
-    <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif';status='off'">Turn off the light</button>
-    <br/>
-    <button onclick="toggle()">Toggle Switch</button>
-
+        <p>JavaScript can change HTML attribute values.</p>
+    
+        <p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+    
+        <button onclick="document.getElementById('myImage').src='img/pic_bulbon.gif';status='on'">Turn on the light</button>
+    
+        <img id="myImage" src="img/pic_bulboff.gif" style="width:100px" alt="Bulb">
+    
+        <button onclick="document.getElementById('myImage').src='img/pic_bulboff.gif';status='off'">Turn off the light</button>
+        <br/>
+        <button onclick="toggle()">Toggle Switch</button>
+    
+    </main>    
     <script>
         let status = "off"
         function toggle(){

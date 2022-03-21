@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <aside>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="bulb.html">Bulb</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+        </ul>
+    </aside>
+    <main>
+        <h2>Simple Calculator</h2>
+
+        <label id="lblOutput"></label>
+        <br/>
+        <button onclick="pressBtn('7')">7</button>
+        <button onclick="pressBtn('8')">8</button>
+        <button onclick="pressBtn('9')">9</button>
+        <button>/</button>
+        <br/>
+        <button onclick="pressBtn('4')">4</button>
+        <button onclick="pressBtn('5')">5</button>
+        <button onclick="pressBtn('6')">6</button>
+        <button>*</button>
+        <br/>
+        <button onclick="pressBtn('1')">1</button>
+        <button onclick="pressBtn('2')">2</button>
+        <button onclick="pressBtn('3')">3</button>
+        <button>-</button>
+        <br/>
+        <button onclick="togglePlusMinusBtn()">+/-</button>
+        <button onclick="pressBtn('0')">0</button>
+        <button>.</button>
+        <button>+</button>
+        <button>=</button>
+        
+    
+    </main>    
+    <script>
+       function pressBtn(textToAppend) {
+            let lbl = document.getElementById("lblOutput")
+
+            lbl.innerText = lbl.innerText + textToAppend
+       }
+
+       function togglePlusMinusBtn() {
+            let lbl = document.getElementById("lblOutput")
+
+            let hasMinus = lbl.innerText.startsWith('-')
+
+            if (hasMinus){
+                lbl.innerText = lbl.innerText.substring(1)
+            } else{
+                lbl.innerText = '-' + lbl.innerText
+            }
+       }
+
+    </script>
+</body>
+
+</html>
